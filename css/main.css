@@ -1,0 +1,63 @@
+/* Global */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 6vw;
+}
+
+/* Helper Classes */
+.is-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.box-shadow {
+    box-shadow: rgba(80, 80, 80, 0.2) 0 0.4vw 2.1vw;
+}
+
+/* Light/Dark Toggle */
+.light-mode {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(228, 226, 255, 1) 0%, rgba(255, 205, 216, 0.9) 34%, rgba(255, 251, 203, 1) 70%, rgba(213, 248, 255, 1) 100%);
+    color: #505050;
+}
+
+.dark-mode {
+    background: black;
+    color: white;
+}
+
+.dark-mode .box-shadow {
+    box-shadow: rgba(255, 212, 231, 0.8) 0 0.4vw 2.1vw;
+}
+
+#toggle {
+    background-color: rgba(255, 235, 247, 0.568);
+    border-radius: 2vw;
+    font-size: 3vw;
+    height: 3vw;
+    padding: 2vw;
+    margin-bottom: 5vw;
+    cursor: pointer;
+}
+
+#toggle:hover {
+    color: pink;
+}
+
+a {
+    all: unset;
+    display: block;
+}
+
+/* Clock */
+#clock {
+    width: 42vw;
+    height: auto;
+    border-radius: 3vw;
+    padding: 5vw;
+}
+

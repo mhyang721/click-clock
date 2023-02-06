@@ -1,2 +1,2 @@
 # digital-clock
- A digital clock with a light & dark theme
+ A simple digital clock with a light & dark theme

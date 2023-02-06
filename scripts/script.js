@@ -41,16 +41,17 @@ function changeMode() {
     theme.classList.toggle("dark-mode"); 
 };
 
-let animationStarted = false;
-let animateJS = false;
+
+// Toggle Dark Mode Glow Effect
+let glowStarted = false;
+let glowJS = false;
 
 function glowEffect() {
-    // Toggle Dark Mode Glow Effect
     var clock = document.querySelector("#clock");
-    if (!animationStarted) {
+    if (!glowStarted) {
         clock.keyf = [
-            { textShadow: '0 0 1vw pink, 0.3vw 0.3vw 1vw lightPink, 0 0 3vw midnightBlue, 0 0 5vw midnightBlue', offset: 0 },
-            { textShadow: '0 0 4vw pink, 0.5vw 0.5vw 0.3vw lightPink, 0 0 0.5vw midnightBlue, 5 5 2vw midnightBlue', offset: 1 },
+            { textShadow: '0 0 0.5vw #ffe5f1, 0.2vw 0.2vw 1vw lightPink, 0 0 1vw #202639, 0 0 1.5vw #202639', offset: 0 },
+            { textShadow: '0 0 1vw #ffe5f1, 0 0 1.5vw lightPink, 0 0 1.5vw #202639, 0 0 1.8vw #202639', offset: 1 },
         ];
     
         clock.opt = {
@@ -61,11 +62,36 @@ function glowEffect() {
             fill:'none'
         };
     
-        animateJS = clock.animate(clock.keyf, clock.opt);
-        animationStarted = true;
+        glowJS = clock.animate(clock.keyf, clock.opt);
+        glowStarted = true;
         
     } else {
-        animateJS.cancel();
-        animationStarted = false;
+        glowJS.cancel();
+        glowStarted = false;
     }   
 };
+
+
+// Jumping Icons Animation
+function jumpingIcons() {
+    var jumpIcons = document.querySelector('.jumping-icons');
+    
+    jumpIcons.keyf = [
+        { transform: 'translate(0,0)', offset: 0 },
+        { transform: 'translate(0,-0.8vw)', offset: 0.5 },
+        { transform: 'translate(0,0)', offset: 1 },
+    ];
+
+    jumpIcons.opt = {
+        duration: 1000,
+        easing:'ease-in-out',
+        iterations: Infinity,
+        direction: 'alternate',
+        fill:'none'
+    };
+
+    jumpIcons.animate(jumpIcons.keyf, jumpIcons.opt);
+
+}
+
+jumpingIcons();

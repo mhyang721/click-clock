@@ -1,2 +1,2 @@
 # digital-clock
- A simple digital clock with a light & dark theme
+ A digital clock with a light & dark theme. Animated with JavaScript.

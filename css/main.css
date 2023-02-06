@@ -14,19 +14,19 @@ body {
 }
 
 .box-shadow {
-    box-shadow: rgba(80, 80, 80, 0.2) 0 0.4vw 2.1vw;
+    box-shadow: rgba(63, 76, 119, 0.2) 0 0.4vw 2.1vw;
 }
 
-/* Light/Dark Toggle */
+/* Light/Dark Background */
 .light-mode {
     width: 100vw;
     height: 100vh;
     background: linear-gradient(90deg, rgba(228, 226, 255, 1) 0%, rgba(255, 205, 216, 0.9) 34%, rgba(255, 251, 203, 1) 70%, rgba(213, 248, 255, 1) 100%);
-    color: #505050;
+    color: #3f4c77;
 }
 
 .dark-mode {
-    background: black;
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
     color: white;
 }
 
@@ -34,8 +34,9 @@ body {
     box-shadow: rgba(255, 212, 231, 0.8) 0 0.4vw 2.1vw;
 }
 
+/* Toggle Button */
 #toggle {
-    background-color: rgba(255, 235, 247, 0.568);
+    background-color: rgb(255, 255, 255, 0.1);
     border-radius: 2vw;
     font-size: 3vw;
     height: 3vw;
@@ -46,6 +47,10 @@ body {
 
 #toggle:hover {
     color: pink;
+}
+
+.dark-mode #toggle {
+    background-color: rgb(63, 76, 119, 0.2);
 }
 
 a {
@@ -61,3 +66,24 @@ a {
     padding: 5vw;
 }
 
+/* Jumping Icons */
+.jumping-icons {
+    flex-direction: row;
+    margin-top: 6vw;
+}
+
+.jump-icon {
+    background: url(../images/sunny-outline.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    width: 1vw;
+    height: 1vw;
+    padding: 0 2vw 0;
+}
+
+.dark-mode .jump-icon {
+    background: url(../images/moon-outline.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}

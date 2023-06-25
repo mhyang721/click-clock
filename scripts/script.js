@@ -1,3 +1,8 @@
+// intro.js onboarding plugin with delay
+setTimeout(function() {
+    introJs().start();
+    }, 1200);
+
 // Digital Clock
 function clock() {
 

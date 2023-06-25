@@ -7,12 +7,20 @@
         <title>Digital Clock</title>
         <link rel="stylesheet" href="css/reset.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <!-- intro.js onboarding plugin stylesheet-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/7.0.1/introjs.min.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <div id="theme" class="light-mode is-flex">
+        
+        <div id="theme" class="light-mode is-flex" >
             <div id="toggle" class="box-shadow">
-                <a href="#" class="toggle-icon is-flex">
+                <a href="#" class="toggle-icon is-flex"             
+                data-intro="Click the icon to toggle between light & dark mode 😎" 
+                data-position="auto"
+                data-highlight-class="helper"
+                data-tooltip-class="tooltip"
+                >
                     <ion-icon name="moon"></ion-icon>
                 </a>
             </div>
@@ -30,7 +38,11 @@
                 <div class="jump-icon"></div>
             </div>
         </div>
+        <!-- intro.js onboarding plugin script -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/7.0.1/intro.min.js"></script>
+        <!-- custom script -->
         <script src="scripts/script.js"></script>
+        <!-- ionicons -->
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     </body>
 </html>

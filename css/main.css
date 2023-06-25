@@ -1,7 +1,7 @@
 /* Global */
 body {
     font-family: 'Poppins', sans-serif;
-    font-size: 6vw;
+    font-size: 5.5vw;
 }
 
 /* Helper Classes */
@@ -60,7 +60,7 @@ a {
 
 /* Clock */
 #clock {
-    width: 42vw;
+    min-width: 42vw;
     height: auto;
     border-radius: 3vw;
     padding: 5vw;
@@ -86,4 +86,56 @@ a {
     background: url(../images/moon-outline.svg);
     background-position: center;
     background-repeat: no-repeat;
+}
+
+/* Tooltip */
+.introjs-tooltipReferenceLayer * {
+    font-family: 'Poppins', sans-serif;
+}
+
+.tooltip {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    text-align: left;
+    color: #3f4c77;
+    background-color: #fff;
+    min-width: 275px;
+    max-width: 310px;
+}
+
+/* Tooltip bubble arrow */
+.introjs-arrow.top {
+    top: -18px;
+    left: 4px;
+}
+
+.introjs-arrow {
+    border: 10px solid transparent;
+}
+
+/* Tooltip button */
+.introjs-tooltipbuttons {
+    border-top: unset;
+    padding: 14px;
+    padding-top: 4px;
+}
+
+.introjs-button,
+.introjs-button:active,
+.introjs-button:focus {
+    border: unset;
+    box-shadow: none;
+    background-color:#8393c8;
+    color: white;
+    text-shadow: none;
+}
+
+.introjs-button:hover {
+    background-color: #606fa1;
+    color: white;
+}
+
+/* Hide tooltip progress dots */
+.introjs-bullets {
+    display: none;
 }

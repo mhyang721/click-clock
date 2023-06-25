@@ -60,10 +60,11 @@ a {
 
 /* Clock */
 #clock {
-    min-width: 42vw;
+    min-width: 44vw;
     height: auto;
     border-radius: 3vw;
-    padding: 5vw;
+    padding: 5.5vw 5vw;
+    
 }
 
 /* Jumping Icons */

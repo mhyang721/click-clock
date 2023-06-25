@@ -71,6 +71,7 @@ a {
 .jumping-icons {
     flex-direction: row;
     margin-top: 6vw;
+    min-height: 3vw;
 }
 
 .jump-icon {
@@ -138,5 +139,6 @@ a {
 
 /* Hide tooltip progress dots */
 .introjs-bullets {
-    display: none;
+    padding-top: 0;
+    /* display: none; */
 }
